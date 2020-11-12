@@ -1,0 +1,749 @@
+{
+    "type": "bundle",
+    "id": "bundle--abe952aa-b943-4a9d-98d4-c6c073b4e8dc",
+    "objects": [
+        {
+            "type": "identity",
+            "id": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "name": "QRadar",
+            "identity_class": "events"
+        },
+        {
+            "id": "observed-data--439c662d-5ddd-453f-afe4-1d00faf87531",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.981Z",
+            "modified": "2020-01-03T17:19:31.981Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 15406,
+                    "dst_ref": "3",
+                    "dst_port": 22,
+                    "protocols": [
+                        "tcp_ip","ssh"
+                    ]
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "10.120.209.202"
+                },
+                "4": {
+                    "type": "Source Zone",
+                    "value": "Poughkeepsie_OT_Coronary_Care"
+                },
+                "5": {
+                    "type": "Destination Zone",
+                    "value": "Internet"
+                },
+				"6": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjYgMDg6NDM6MDYgMTAuMTAuNTAuMTMgPDE2Nj4lQVNBLTYtMzAyMDEzOiBCdWlsdCBvdXRib3VuZCBUQ1AgY29ubmVjdGlvbiAzMDAgZm9yIEludGVybmV0OjEwMy4yMTYuMjIxLjE5LzIyICgxMDMuMjE2LjIyMS4xOS8yMikgdG8gUG91Z2hrZWVwc2llX0VtcGxveWVlX1dpcmVkOjE3Mi4xNi42Mi42NS8xNTQwNiAoMTcyLjE2LjYyLjY1LzE1NDA2KQo="
+                }
+            },
+            "x_com_ibm_ariel": {
+                "devicetype": 41,
+                "qid_name": "Build TCP Connection",
+                "qid": 3503193,
+                "category_name": "Firewall Session Opened",
+                "category_id": 19012,
+                "log_source_id": 118,
+                "log_source_name": "Yorktown_ASA@10.10.50.13",
+                "identity_ip": "10.10.50.13",
+                "utf8_payload": "<182>Aug 24 13:19:08 10.10.50.13 %ASA-6-302013: Built outbound TCP connection 300 for Internet:103.216.221.19/22 (103.216.221.19/22) to Poughkeepsie_OT_Coronary_Care:10.120.209.202/15406 (10.120.209.202/15406)",
+                "magnitude": 4,
+				"relevance": 6,
+				"severity": 2,
+				"credibility" : 5
+            },
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1
+        },
+        {
+            "id": "observed-data--ccefc459-9b51-4358-9704-614e0a99dea9",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.985Z",
+            "modified": "2020-01-03T17:19:31.986Z",
+            "objects": {
+             "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 15406,
+                    "dst_ref": "3",
+                    "dst_port": 22,
+                    "protocols": [
+                        "tcp_ip","ssh"
+                    ]
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "172.16.62.65",
+                    "resolves_to_refs": "4"
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "E6:E0:8C:F3:D3:59"
+                },
+                "5": {
+                    "type": "Source Zone",
+                    "value": "Internet"
+                },
+                "6": {
+                    "type": "Destination Zone",
+                    "value": "Poughkeepsie_Employee_Wired"
+                },
+				"7": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjYgMTA6Mjk6MDUgMTAuMTAuNTAuMTMgPDE2Nj4lQVNBLTYtMzAyMDEzOiBCdWlsdCBvdXRib3VuZCBUQ1AgY29ubmVjdGlvbiAzMDAgZm9yIEludGVybmV0OjEwMy4yMTYuMjIxLjE5LzIyICgxMDMuMjE2LjIyMS4xOS8yMikgdG8gUG91Z2hrZWVwc2llX0VtcGxveWVlX1dpcmVkOjE3Mi4xNi42Mi42NS8xNTQwNiAoMTcyLjE2LjYyLjY1LzE1NDA2KQo"
+                }    
+            },	
+			"x_com_ibm_ariel": {
+                "devicetype": 41,
+                "qid_name": "Build TCP Connection",
+                "qid": 3503193,
+                "category_name": "Firewall Session Opened",
+                "category_id": 19012,
+                "log_source_id": 118,
+                "log_source_name": "Yorktown_ASA@10.10.50.13",
+                "identity_ip": "10.10.50.13",
+                "utf8_payload": "<182>Aug 26 10:29:05 10.10.50.13 <166>%ASA-6-302013: Built outbound TCP connection 300 for Internet:103.216.221.19/22 (103.216.221.19/22) to Poughkeepsie_Employee_Wired:172.16.62.65/15406 (172.16.62.65/15406)",
+                "magnitude": 4,
+				"relevance": 6,
+				"severity": 2,
+				"credibility" : 5				
+			},
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1
+        },
+		{
+            "id": "observed-data--ccefc459-9b51-4358-9704-614e0a99dea9",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.985Z",
+            "modified": "2020-01-03T17:19:31.986Z",
+            "objects": {
+             "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 15302,
+                    "dst_ref": "3",
+                    "dst_port": 22,
+                    "protocols": [
+                        "tcp_ip","ssh"
+                    ]
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "172.16.62.54",
+                    "resolves_to_refs": "4"
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "9A:D2:5C:D4:55:A8"
+                },
+                "5": {
+                    "type": "Source Zone",
+                    "value": "Internet"
+                },
+                "6": {
+                    "type": "Destination Zone",
+                    "value": "Poughkeepsie_Employee_Wired"
+                },
+				"7": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjYgMDg6NDM6MDcgMTAuMTAuNTAuMTMgPDE2Nj4lQVNBLTYtMzAyMDEzOiBCdWlsdCBvdXRib3VuZCBUQ1AgY29ubmVjdGlvbiAzMDEgZm9yIEludGVybmV0OjEwMy4yMTYuMjIxLjE5LzIyICgxMDMuMjE2LjIyMS4xOS8yMikgdG8gUG91Z2hrZWVwc2llX0VtcGxveWVlX1dpZmk6MTcyLjE2LjYzLjU0LzE1MzAyICgxNzIuMTYuNjMuNTQvMTUzMDIp"
+                }    
+            },	
+			"x_com_ibm_ariel": {
+                "devicetype": 41,
+                "qid_name": "Build TCP Connection",
+                "qid": 3503193,
+                "category_name": "Firewall Session Opened",
+                "category_id": 19012,
+                "log_source_id": 118,
+                "log_source_name": "Yorktown_ASA@10.10.50.13",
+                "identity_ip": "10.10.50.13",
+                "utf8_payload": "<182>Aug 26 10:29:06 10.10.50.13 <166>%ASA-6-302013: Built outbound TCP connection 301 for Internet:103.216.221.19/22 (103.216.221.19/22) to Poughkeepsie_Employee_Wifi:172.16.62.54/15302 (172.16.63.54/15302)",
+                "magnitude": 4,
+				"relevance": 6,
+				"severity": 2,
+				"credibility" : 5				
+			},
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1
+        },
+	 	{
+            "id": "observed-data--ccefc459-9b51-4358-9704-614e0a99dea9",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.985Z",
+            "modified": "2020-01-03T17:19:31.986Z",
+            "objects": {
+             "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 11120,
+                    "dst_ref": "3",
+                    "dst_port": 80,
+					"dst_byte_count": 922,
+                    "protocols": [
+                        "tcp_ip","https"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "172.16.62.65"
+                },
+                "3": {
+                    "type": "URL",
+                    "value": "https://m.sangfor.com"
+                },
+				"4": {
+                    "type": "domain-name",
+                    "value": "sangfor.com"
+                },		
+                "5" : {
+                    "type": "user-account",
+                    "user_id": "RLee@test.altoro.com"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjYgMDg6NDM6MDggMTAuMTAuNTAuMTEgQmx1ZWNvYXR8c3JjPTE3Mi4xNi42Mi42NXxzcmNwb3J0PTExMTIwfGRzdD0xMDMuMjE2LjIyMS4xOXxkc3Rwb3J0PTgwfHVzZXJuYW1lPVJMZWVAdGVzdC5hbHRvcm8uY29tfGRldmljZXRpbWU9WzI1LzcvMjAyMDowOTowOToxMSBHTVRdfHMtYWN0aW9uPVRDUF9ISVR8c2Mtc3RhdHVzPTIwMHxjcy1tZXRob2Q9Z2V0fHRpbWUtdGFrZW49MXxzYy1ieXRlcz05MjJ8Y3MtYnl0ZXM9IDE1MXxjcy11cmktc2NoZW1lPWh0dHBzfGNzLWhvc3Q9c2FuZ2Zvci5jb218Y3MtdXJpLXBhdGg9L3gvcHJpdmF0ZS9hL2FwcHMvc2VydmljZS9jL3N1cHBvcnQubXA0fGNzLXVyaS1xdWVyeT0tfGNzLXVyaS1lIHh0ZW5zaW9uPS18Y3MtYXV0aC1ncm91cD0tfHJzKCBDb250ZW50LVR5cGUpPXRleHQvaHRtbHxjcyhVc2VyLUFnZW50KT0tfGNzKFJlZmVyZXIpPS18c2MtZmlsdGVyLXJlc3VsdD1PQlNFUlZFRHxmaWx0ZXItY2F0ZWdvcnk9VGVjaG5vbG9neS9JbnRlcm5ldGNzLXVyaT1odHRwczovL20uc2FuZ2Zvci5jb20K"
+                }    
+            },	
+			"x_com_ibm_ariel": {
+                "devicetype": 113,
+                "qid_name": "TCP_HIT",
+                "qid": 13500072,
+                "category_name": "Object Cached",
+                "category_id": 19012,
+                "log_source_id": 117,
+                "log_source_name": "Yorktown_Bluecoat@10.10.50.11",
+                "identity_ip": "10.10.50.11",
+                "utf8_payload": "<182>Aug 26 08:43:08 10.10.50.11 Bluecoat|src=172.16.62.65|srcport=11120|dst=103.216.221.19|dstport=80|username=RLee@test.altoro.com|devicetime=[25/7/2020:09:09:11 GMT]|s-action=TCP_HIT|sc-status=200|cs-method=get|time-taken=1|sc-bytes=922|cs-bytes= 151|cs-uri-scheme=https|cs-host=sangfor.com|cs-uri-path=/x/private/a/apps/service/c/support.mp4|cs-uri-query=-|cs-uri-e xtension=-|cs-auth-group=-|rs( Content-Type)=text/html|cs(User-Agent)=-|cs(Referer)=-|sc-filter-result=OBSERVED|filter-category=Technology/Internetcs-uri=https://m.sangfor.com",
+                "magnitude": 5,
+				"relevance": 6,
+				"severity": 1,
+				"credibility" : 9
+			},
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1
+        },		
+		{
+            "id": "observed-data--ccefc459-9b51-4358-9704-614e0a99dea9",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.985Z",
+            "modified": "2020-01-03T17:19:31.986Z",
+            "objects": {
+             "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 11120,
+                    "dst_ref": "3",
+                    "dst_port": 80,
+					"dst_byte_count": 922,
+                    "protocols": [
+                        "tcp_ip","https"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "172.16.62.54"
+                },
+                "3": {
+                    "type": "URL",
+                    "value": "https://m.sangfor.com"
+                },
+				"4": {
+                    "type": "domain-name",
+                    "value": "sangfor.com"
+                },		
+                "5" : {
+                    "type": "user-account",
+                    "user_id": "JPowell@test.altoro.com"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjYgMTM6MTg6MDIgMTAuMTAuNTAuMTEgQmx1ZWNvYXR8c3JjPTE3Mi4xNi42My41NHxzcmNwb3J0PTExMTIwfGRzdD0xMDMuMjE2LjIyMS4xOXxkc3Rwb3J0PTgwfHVzZXJuYW1lPUpQb3dlbGxAdGVzdC5hbHRvcm8uY29tfGRldmljZXRpbWU9WzI1LzcvMjAyMDowOTowOToxMSBHTVRdfHMtYWN0aW9uPVRDUF9ISVR8c2Mtc3RhdHVzPTIwMHxjcy1tZXRob2Q9Z2V0fHRpbWUtdGFrZW49MXxzYy1ieXRlcz05MjJ8Y3MtYnl0ZXM9IDE1MXxjcy11cmktc2NoZW1lPWh0dHBzfGNzLWhvc3Q9c2FuZ2Zvci5jb218Y3MtdXJpLXBhdGg9L3gvcHJpdmF0ZS9hL2FwcHMvc2VydmljZS9jL3N1cHBvcnQubXA0fGNzLXVyaS1xdWVyeT0tfGNzLXVyaS1lIHh0ZW5zaW9uPS18Y3MtYXV0aC1ncm91cD0tfHJzKCBDb250ZW50LVR5cGUpPXRleHQvaHRtbHxjcyhVc2VyLUFnZW50KT0tfGNzKFJlZmVyZXIpPS18c2MtZmlsdGVyLXJlc3VsdD1PQlNFUlZFRHxmaWx0ZXItY2F0ZWdvcnk9VGVjaG5vbG9neS9JbnRlcm5ldGNzLXVyaT1odHRwczovL20uc2FuZ2Zvci5jb20="
+                }    
+            },	
+			"x_com_ibm_ariel": {
+                "devicetype": 113,
+                "qid_name": "TCP_HIT",
+                "qid": 13500072,
+                "category_name": "Object Cached",
+                "category_id": 19012,
+                "log_source_id": 117,
+                "log_source_name": "Yorktown_Bluecoat@10.10.50.11",
+                "identity_ip": "10.10.50.11",
+                "utf8_payload": "<182>Aug 26 13:18:02 10.10.50.11 Bluecoat|src=172.16.63.54|srcport=11120|dst=103.216.221.19|dstport=80|username=JPowell@test.altoro.com|devicetime=[25/7/2020:09:09:11 GMT]|s-action=TCP_HIT|sc-status=200|cs-method=get|time-taken=1|sc-bytes=922|cs-bytes= 151|cs-uri-scheme=https|cs-host=sangfor.com|cs-uri-path=/x/private/a/apps/service/c/support.mp4|cs-uri-query=-|cs-uri-e xtension=-|cs-auth-group=-|rs( Content-Type)=text/html|cs(User-Agent)=-|cs(Referer)=-|sc-filter-result=OBSERVED|filter-category=Technology/Internetcs-uri=https://m.sangfor.com",
+                "magnitude": 5,
+				"relevance": 6,
+				"severity": 1,
+				"credibility" : 9
+			},
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1
+        },		
+		{
+            "id": "observed-data--439c662d-5ddd-453f-afe4-1d00faf87531",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.981Z",
+            "modified": "2020-01-03T17:19:31.981Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 15406,
+                    "dst_ref": "3",
+                    "dst_port": 22,
+                    "protocols": [
+                        "tcp_ip","ssh"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "172.16.62.65"
+                },
+                "3": {
+                    "type": "Source Zone",
+                    "value": "Poughkeepsie_Employee_Wired"
+                },
+                "4": {
+                    "type": "Destination Zone",
+                    "value": "Internet"
+                },
+				"5": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjYgMTM6MTg6MDIgMTAuMTAuNTAuMTMgJUFTQS02LTEwNjEwMDogYWNjZXNzLWxpc3QgRW1wbG95ZWUtQmxvY2tfVHJhZmZpYyBkZW5pZWQgdGNwIFBvdWdoa2VlcHNpZV9FbXBsb3llZV9XaXJlZC8xNzIuMTYuNjIuNjUoMTU0MDYpIC0+IEludGVybmV0LzEwMy4yMTYuMjIxLjE5KDIyKSBoaXQtY250IDEgZmlyc3QgaGl0IFsweDJjMjAwLCAweDBdCg=="
+                }
+            },
+            "x_com_ibm_ariel": {
+                "devicetype": 41,
+                "qid_name": "Packet denied by ACL",
+                "qid": 3504430,
+                "category_name": "Firewall Deny",
+                "category_id": 19012,
+                "log_source_id": 118,
+                "log_source_name": "Yorktown_ASA@10.10.50.13",
+                "identity_ip": "10.10.50.13",
+                "utf8_payload": "<182>Aug 26 13:18:02 10.10.50.13 %ASA-6-106100: access-list Employee-Block_Traffic denied tcp Poughkeepsie_Employee_Wired/172.16.62.65(15406) -> Internet/103.216.221.19(22) hit-cnt 1 first hit [0x2c200, 0x0]",
+                "magnitude": 4,
+				"relevance": 6,
+				"severity": 2,
+				"credibility" : 5
+            },
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1
+        },	
+		{
+            "id": "observed-data--439c662d-5ddd-453f-afe4-1d00faf87531",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.981Z",
+            "modified": "2020-01-03T17:19:31.981Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 15302,
+                    "dst_ref": "3",
+                    "dst_port": 22,
+                    "protocols": [
+                        "tcp_ip","ssh"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "172.16.62.54"
+                },
+                "3": {
+                    "type": "Source Zone",
+                    "value": "Poughkeepsie_Employee_Wired"
+                },
+                "4": {
+                    "type": "Destination Zone",
+                    "value": "Internet"
+                },
+				"5": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjYgMTQ6MjM6MzAgMTAuMTAuNTAuMTMgJUFTQS02LTEwNjEwMDogYWNjZXNzLWxpc3QgRW1wbG95ZWUtQmxvY2stVHJhZmZpYyBkZW5pZWQgdGNwIFBvdWdoa2VlcHNpZV9FbXBsb3llZV9XaWZpLzE3Mi4xNi42Mi41NCgxNTMwMikgLT4gSW50ZXJuZXQvMTAzLjIxNi4yMjEuMTkoMjIpIGhpdC1jbnQgMiBmaXJzdCBoaXQgWzB4MmMyMDEsIDB4MF0="
+                }
+            },
+            "x_com_ibm_ariel": {
+                "devicetype": 41,
+                "qid_name": "Packet denied by ACL",
+                "qid": 3504430,
+                "category_name": "Firewall Deny",
+                "category_id": 19012,
+                "log_source_id": 118,
+                "log_source_name": "Yorktown_ASA@10.10.50.13",
+                "identity_ip": "10.10.50.13",
+                "utf8_payload": "<182>Aug 26 14:23:30 10.10.50.13 %ASA-6-106100: access-list Employee-Block-Traffic denied tcp Poughkeepsie_Employee_Wifi/172.16.62.54(15302) -> Internet/103.216.221.19(22) hit-cnt 2 first hit [0x2c201, 0x0]",
+                "magnitude": 4,
+				"relevance": 6,
+				"severity": 2,
+				"credibility" : 5
+            },
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1
+		},		
+	{
+            "id": "observed-data--439c662d-5ddd-453f-afe4-1d00faf87531",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.981Z",
+            "modified": "2020-01-03T17:19:31.981Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 15406,
+                    "dst_ref": "3",
+                    "dst_port": 22,
+                    "protocols": [
+                        "tcp_ip","ssh"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "172.16.62.65"
+                },
+                "3": {
+                    "type": "Source Zone",
+                    "value": "Poughkeepsie_Employee_Wired"
+                },
+                "4": {
+                    "type": "Destination Zone",
+                    "value": "Internet"
+                },
+				"5": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjYgMTQ6MjM6MzAgMTAuMTAuNTAuMTMgJUFTQS02LTMwMjAxNDogVGVhcmRvd24gVENQIGNvbm5lY3Rpb24gMzAwIGZvciBJbnRlcm5ldDoxMDMuMjE2LjIyMS4xOS8yMiB0byBQb3VnaGtlZXBzaWVfRW1wbG95ZWVfV2lyZWQ6MTcyLjE2LjYyLjY1LzE1NDA2IGR1cmF0aW9uICAwOjAwOjAxIGJ5dGVzIDAgVENQIEZJTnMK"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "devicetype": 41,
+                "qid_name": "Teardown TCP connection",
+                "qid": 3503194,
+                "category_name": "Firewall Session Closed",
+                "category_id": 19012,
+                "log_source_id": 118,
+                "log_source_name": "Yorktown_ASA@10.10.50.13",
+                "identity_ip": "10.10.50.13",
+                "utf8_payload": "<182>Aug 26 14:23:30 10.10.50.13 %ASA-6-302014: Teardown TCP connection 300 for Internet:103.216.221.19/22 to Poughkeepsie_Employee_Wired:172.16.62.65/15406 duration  0:00:01 bytes 0 TCP FINs",
+                "magnitude": 4,
+				"relevance": 6,
+				"severity": 2,
+				"credibility" : 5
+            },
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1
+	},
+	{
+            "id": "observed-data--439c662d-5ddd-453f-afe4-1d00faf87531",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.981Z",
+            "modified": "2020-01-03T17:19:31.981Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 15302,
+                    "dst_ref": "3",
+                    "dst_port": 22,
+                    "protocols": [
+                        "tcp_ip","ssh"
+                    ]
+                },
+                "2": {
+                    "type": "ipv4-addr",
+                    "value": "172.16.62.54"
+                },
+                "3": {
+                    "type": "Source Zone",
+                    "value": "Poughkeepsie_Employee_Wired"
+                },
+                "4": {
+                    "type": "Destination Zone",
+                    "value": "Internet"
+                },
+				"5": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjYgMTQ6MjM6MzAgMTAuMTAuNTAuMTMgJUFTQS02LTMwMjAxNDogVGVhcmRvd24gVENQIGNvbm5lY3Rpb24gMzAwIGZvciBJbnRlcm5ldDoxMDMuMjE2LjIyMS4xOS8yMiB0byBQb3VnaGtlZXBzaWVfRW1wbG95ZWVfV2lyZWQ6MTcyLjE2LjYyLjY1LzE1NDA2IGR1cmF0aW9uICAwOjAwOjAxIGJ5dGVzIDAgVENQIEZJTnMK"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "devicetype": 41,
+                "qid_name": "Teardown TCP connection",
+                "qid": 3503194,
+                "category_name": "Firewall Session Closed",
+                "category_id": 19012,
+                "log_source_id": 118,
+                "log_source_name": "Yorktown_ASA@10.10.50.13",
+                "identity_ip": "10.10.50.13",
+                "utf8_payload": "<182>Aug 26 14:23:30 10.10.50.13 %ASA-6-302014: Teardown TCP connection 300 for Internet:103.216.221.19/22 to Poughkeepsie_Employee_Wired:172.16.62.64/15406 duration  0:00:01 bytes 0 TCP FINs",
+                "magnitude": 4,
+				"relevance": 6,
+				"severity": 2,
+				"credibility" : 5
+            },
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1		
+        },
+	{
+            "id": "observed-data--439c662d-5ddd-453f-afe4-1d00faf87531",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-03T17:19:31.981Z",
+            "modified": "2020-01-03T17:19:31.981Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 15406,
+                    "dst_ref": "3",
+                    "dst_port": 22,
+                    "protocols": [
+                        "tcp_ip","ssh"
+                    ]
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "10.120.209.202"
+                },
+                "4": {
+                    "type": "Source Zone",
+                    "value": "Poughkeepsie_OT_Coronary_Care"
+                },
+                "5": {
+                    "type": "Destination Zone",
+                    "value": "Internet"
+                },
+				"6": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5BdWcgMjggMTM6MzM6NDEgMTAuMTAuNTAuMTMgJUFTQS02LTMwMjAxNDogVGVhcmRvd24gVENQIGNvbm5lY3Rpb24gMzAwIGZvciBJbnRlcm5ldDoxMDMuMjE2LjIyMS4xOS8yMiB0byBQb3VnaGtlZXBzaWVfT1RfQ29yb25hcnlfQ2FyZToxMC4xMjAuMjA5LjIwMi8xNTQwNiBkdXJhdGlvbiAgMDowMDowMSBieXRlcyAwIFRDUCBGSU5zCg"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "devicetype": 41,
+                "qid_name": "Teardown TCP connection",
+                "qid": 3503194,
+                "category_name": "Firewall Session Closed",
+                "category_id": 19012,
+                "log_source_id": 118,
+                "log_source_name": "Yorktown_ASA@10.10.50.13",
+                "identity_ip": "10.10.50.13",
+                "utf8_payload": "<182>Aug 28 13:33:41 10.10.50.13 %ASA-6-302014: Teardown TCP connection 300 for Internet:103.216.221.19/22 to Poughkeepsie_OT_Coronary_Care:10.120.209.202/15406 duration  0:00:01 bytes 0 TCP FINs",
+                "magnitude": 7,
+		"relevance": 10,
+		"severity": 2,
+		"credibility" : 10
+            },
+            "first_observed": "2020-01-03T23:58:00.151Z",
+            "last_observed": "2020-01-03T23:58:00.151Z",
+            "number_observed": 1
+        }
+	],
+	{
+    "id": "bundle--a625c45a-c49c-488c-a9c0-8ff9529ae1ad",
+    "objects": [
+        {
+            "created": "2020-01-23T11:42:37.424Z",
+            "id": "identity--8899d562-2667-4532-8e19-b4eca6c959bd",
+            "identity_class": "system",
+            "modified": "2020-01-23T11:42:37.424Z",
+            "name": "carbonblack",
+            "type": "identity"
+        },
+        {
+            "created": "2020-01-24T16:59:16.578Z",
+            "created_by_ref": "identity--8899d562-2667-4532-8e19-b4eca6c959bd",
+            "first_observed": "2020-01-24T16:59:16.578Z",
+            "id": "observed-data--626a6ca7-1145-4a66-b695-e1fe8090c319",
+            "last_observed": "2020-01-24T16:59:16.578Z",
+            "modified": "2020-01-24T16:59:16.578Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "hashes": {
+                        "MD5": "463a4a2ba2e9496201b711302c4e3008",
+                        "SHA-256": "21129ad17800b11cdb36906ba7f6105e3bd1cf44575f77df58ba91640ba0cab9"
+                    },
+                    "name": "support.mp4",
+                    "type": "file"
+                },
+                "1": {
+                    "binary_ref": "0",
+                    "command_line": "C:\\Users\\KHenderson\\Downloads\\support.mp4",
+                    "created": "2020-01-24T16:59:16.578Z",
+                    "creator_user_ref": "8",
+                    "name": "support.mp4",
+                    "opened_connection_refs": [
+                        "6"
+                    ],
+                    "parent_ref": "3",
+                    "pid": 7284,
+                    "type": "process"
+                },
+                "2": {
+                    "hashes": {
+                        "MD5": "463a4a2ba2e9496201b711302c4e3008"
+                    },
+                    "name": "support.mp4",
+                    "type": "file"
+                },
+                "3": {
+                    "binary_ref": "2",
+                    "name": "support.mp4",
+                    "pid": 800,
+                    "type": "process"
+                },
+                "4": {
+                    "type": "domain-name",
+                    "value": "altoro.test.com"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "6": {
+                    "dst_ref": "5",
+                    "src_ref": "7",
+                    "type": "network-traffic"
+                },
+                "7": {
+                    "type": "ipv4-addr",
+                    "value": "10.120.209.202"
+                },
+                "8": {
+                    "type": "user-account",
+                    "user_id": "KHenderson@test.altoro.com"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "created": "2020-01-24T13:05:54.972Z",
+            "created_by_ref": "identity--8899d562-2667-4532-8e19-b4eca6c959bd",
+            "first_observed": "2020-01-24T13:05:54.972Z",
+            "id": "observed-data--e4f1d90e-0f50-4b60-ba20-89ac3a3e9f58",
+            "last_observed": "2020-01-24T13:05:54.972Z",
+            "modified": "2020-01-24T13:05:54.972Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "hashes": {
+                        "MD5": "967fcf185634def5177f74b0f703bdc0"
+                    },
+                    "name": "applemobiledeviceservice.exe",
+                    "type": "file"
+                },
+                "1": {
+                    "binary_ref": "0",
+                    "command_line": "\"C:\\Program Files\\Common Files\\Apple\\Mobile Device Support\\AppleMobileDeviceService.exe\"",
+                    "created": "2020-01-24T13:05:54.972Z",
+                    "creator_user_ref": "8",
+                    "name": "applemobiledeviceservice.exe",
+                    "opened_connection_refs": [
+                        "6"
+                    ],
+                    "parent_ref": "3",
+                    "pid": 4956,
+                    "type": "process"
+                },
+                "2": {
+                    "hashes": {
+                        "MD5": "967fcf185634def5177f74b0f703bdc0"
+                    },
+                    "name": "services.exe",
+                    "type": "file"
+                },
+                "3": {
+                    "binary_ref": "2",
+                    "name": "services.exe",
+                    "pid": 564,
+                    "type": "process"
+                },
+                "4": {
+                    "type": "domain-name",
+                    "value": "altoro.test.com"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "1.9.1.8"
+                },
+                "6": {
+                    "dst_ref": "5",
+                    "src_ref": "7",
+                    "type": "network-traffic"
+                },
+                "7": {
+                    "type": "ipv4-addr",
+                    "value": "10.120.209.202"
+                },
+                "8": {
+                    "type": "user-account",
+                    "user_id": "KHenderson@test.altoro.com"
+                }
+            },
+            "type": "observed-data"
+        }
+    ]
+}
+
+}

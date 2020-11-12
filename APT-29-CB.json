@@ -1,0 +1,147 @@
+{
+    "id": "bundle--a625c45a-c49c-488c-a9c0-8ff9529ae1ad",
+    "objects": [
+        {
+            "created": "2020-01-23T11:42:37.424Z",
+            "id": "identity--8899d562-2667-4532-8e19-b4eca6c959bd",
+            "identity_class": "system",
+            "modified": "2020-01-23T11:42:37.424Z",
+            "name": "carbonblack",
+            "type": "identity"
+        },
+        {
+            "created": "2020-01-24T16:59:16.578Z",
+            "created_by_ref": "identity--8899d562-2667-4532-8e19-b4eca6c959bd",
+            "first_observed": "2020-01-24T16:59:16.578Z",
+            "id": "observed-data--626a6ca7-1145-4a66-b695-e1fe8090c319",
+            "last_observed": "2020-01-24T16:59:16.578Z",
+            "modified": "2020-01-24T16:59:16.578Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "hashes": {
+                        "MD5": "463a4a2ba2e9496201b711302c4e3008",
+                        "SHA-256": "21129ad17800b11cdb36906ba7f6105e3bd1cf44575f77df58ba91640ba0cab9"
+                    },
+                    "name": "support.mp4",
+                    "type": "file"
+                },
+                "1": {
+                    "binary_ref": "0",
+                    "command_line": "C:\\Users\\KHenderson\\Downloads\\support.mp4",
+                    "created": "2020-01-24T16:59:16.578Z",
+                    "creator_user_ref": "8",
+                    "name": "support.mp4",
+                    "opened_connection_refs": [
+                        "6"
+                    ],
+                    "parent_ref": "3",
+                    "pid": 7284,
+                    "type": "process"
+                },
+                "2": {
+                    "hashes": {
+                        "MD5": "463a4a2ba2e9496201b711302c4e3008"
+                    },
+                    "name": "support.mp4",
+                    "type": "file"
+                },
+                "3": {
+                    "binary_ref": "2",
+                    "name": "support.mp4",
+                    "pid": 800,
+                    "type": "process"
+                },
+                "4": {
+                    "type": "domain-name",
+                    "value": "altoro.test.com"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "103.216.221.19"
+                },
+                "6": {
+                    "dst_ref": "5",
+                    "src_ref": "7",
+                    "type": "network-traffic"
+                },
+                "7": {
+                    "type": "ipv4-addr",
+                    "value": "10.120.209.202"
+                },
+                "8": {
+                    "type": "user-account",
+                    "user_id": "KHenderson@test.altoro.com"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "created": "2020-01-24T13:05:54.972Z",
+            "created_by_ref": "identity--8899d562-2667-4532-8e19-b4eca6c959bd",
+            "first_observed": "2020-01-24T13:05:54.972Z",
+            "id": "observed-data--e4f1d90e-0f50-4b60-ba20-89ac3a3e9f58",
+            "last_observed": "2020-01-24T13:05:54.972Z",
+            "modified": "2020-01-24T13:05:54.972Z",
+            "number_observed": 1,
+            "objects": {
+                "0": {
+                    "hashes": {
+                        "MD5": "967fcf185634def5177f74b0f703bdc0"
+                    },
+                    "name": "applemobiledeviceservice.exe",
+                    "type": "file"
+                },
+                "1": {
+                    "binary_ref": "0",
+                    "command_line": "\"C:\\Program Files\\Common Files\\Apple\\Mobile Device Support\\AppleMobileDeviceService.exe\"",
+                    "created": "2020-01-24T13:05:54.972Z",
+                    "creator_user_ref": "8",
+                    "name": "applemobiledeviceservice.exe",
+                    "opened_connection_refs": [
+                        "6"
+                    ],
+                    "parent_ref": "3",
+                    "pid": 4956,
+                    "type": "process"
+                },
+                "2": {
+                    "hashes": {
+                        "MD5": "967fcf185634def5177f74b0f703bdc0"
+                    },
+                    "name": "services.exe",
+                    "type": "file"
+                },
+                "3": {
+                    "binary_ref": "2",
+                    "name": "services.exe",
+                    "pid": 564,
+                    "type": "process"
+                },
+                "4": {
+                    "type": "domain-name",
+                    "value": "altoro.test.com"
+                },
+                "5": {
+                    "type": "ipv4-addr",
+                    "value": "1.9.1.8"
+                },
+                "6": {
+                    "dst_ref": "5",
+                    "src_ref": "7",
+                    "type": "network-traffic"
+                },
+                "7": {
+                    "type": "ipv4-addr",
+                    "value": "10.120.209.202"
+                },
+                "8": {
+                    "type": "user-account",
+                    "user_id": "KHenderson@test.altoro.com"
+                }
+            },
+            "type": "observed-data"
+        }
+    ],
+	"type": "bundle"
+}
